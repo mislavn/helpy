@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
+  "packages": [
+    "rustup@1.27.1",
+    "llvm@11.1.0",
+    "uv@0.4.30",
+    "just@1.38.0",
+    "cargo-xwin@0.17.3",
+    "cargo-audit@0.21.0",
+    "cargo-license@0.6.1",
+    "cargo-nextest@0.9.81",
+    "curl@8.12.1"
+  ]
+}

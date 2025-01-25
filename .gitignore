@@ -1,0 +1,16 @@
+# devbox
+.devbox
+
+# Python
+.venv
+dist
+helpy.egg-info
+
+# Rust
+target
+
+# Lock files
+# Removed for the demo, otherwise should be tracked
+uv.lock
+devbox.lock
+Cargo.lock

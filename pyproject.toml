@@ -1,0 +1,31 @@
+[project]
+name = "helpy"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "rust-server",
+  "python-server",
+  "my-logging",
+]
+
+[tool.uv.sources]
+rust-server = { workspace = true }
+python-server = { workspace = true }
+my-logging = { workspace = true }
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[dependency-groups]
+dev = [
+    "cargo-zigbuild>=0.19.8",
+    "ipython>=9.0.2",
+    "maturin>=1.8.3",
+    "pre-commit>=4.1.0",
+    "pytest>=8.3.5",
+    "robotframework-requests>=0.9.7",
+    "robotframework-tidy>=4.16.0",
+    "robotframework>=7.2.2",
+    "ruff>=0.11.0",
+    "uv-secure>=0.9.0",
+]

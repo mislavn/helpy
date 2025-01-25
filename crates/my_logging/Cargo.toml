@@ -1,0 +1,14 @@
+[package]
+name = "my_logging"
+edition.workspace = true
+rust-version.workspace = true
+version.workspace = true
+
+[dependencies]
+opentelemetry = { workspace = true }
+opentelemetry_sdk = { workspace = true }
+opentelemetry-jaeger = { workspace = true }
+opentelemetry-jaeger-propagator = { workspace = true }
+tracing = { workspace = true }
+opentelemetry-otlp = { workspace = true, features = ["grpc-tonic", "tonic"] }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }

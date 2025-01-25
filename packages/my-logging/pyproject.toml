@@ -1,0 +1,18 @@
+[project]
+name = "my-logging"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mislav Novakovic", email = "mislav.novakovic@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+		"logging>=0.4.9.6",
+		"jaeger-client>=4.8.0",
+    "my-logging",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

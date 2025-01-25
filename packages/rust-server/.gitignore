@@ -1,0 +1,3 @@
+target
+src/rust_server/__pycache__
+src/rust_server/*.so

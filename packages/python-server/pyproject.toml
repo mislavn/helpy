@@ -1,0 +1,22 @@
+[project]
+name = "python-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mislav Novakovic", email = "mislav.novakovic@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+		"rust_server",
+		"flask>=3.1.0",
+		"logging>=0.4.9.6",
+    "my-logging",
+]
+
+[project.scripts]
+python-server = "python_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

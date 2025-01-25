@@ -1,0 +1,24 @@
+[package]
+name = "rust_server"
+edition.workspace = true
+version.workspace = true
+rust-version.workspace = true
+
+[lib]
+name = "_core"
+# "cdylib" is necessary to produce a shared library for Python to import from.
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { workspace = true, features = ["extension-module", "abi3-py39", "generate-import-lib"] }
+pyo3-log = { workspace = true }
+pythonize = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+snafu = { workspace = true }
+common = { workspace = true }
+my_logging = { workspace = true }
+log = { workspace = true }
+opentelemetry = { workspace = true }
+tracing = { workspace = true }
+tokio = { workspace = true, features = ["rt-multi-thread"] }
